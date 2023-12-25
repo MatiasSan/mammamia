@@ -15,3 +15,7 @@ comprar.
 5. Calcular el total de la compra y mostrarlo en los componentes que correspondan
 según las imágenes de referencia.
 (Opcional)
+
+
+Matías Coleman
+Ricardo Moena
