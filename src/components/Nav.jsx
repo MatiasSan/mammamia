@@ -1,19 +1,19 @@
-import React, { useContext } from "react";
-import { Container, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { CartContext } from "../contexts/PizzasContext";
+import React, { useContext } from 'react';
+import { Container, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../contexts/PizzasContext';
 
 const Nav = () => {
+  const [cart, setCart] = useContext(CartContext);
 
-    const [cart, setCart]= useContext(CartContext)
-
-
-    const quantity =cart.reduce((acc,curr)=> {
-        return acc + curr.quantity
-    }, 0)
+  const quantity = cart.reduce((acc, curr) => {
+    return acc + curr.quantity;
+  }, 0);
   return (
-    <Navbar bg="dark" variant="dark" className="d-flex justify-content-between">
-      <Navbar.Brand>Mamma Mia!</Navbar.Brand>
+    <Navbar variant="dark" className="d-flex justify-content-between barra">
+      <Link to="/">
+        <Navbar.Brand>Mamma Mia!</Navbar.Brand>
+      </Link>
       <div className="ml-3 d-flex">
         <Link to="/" className="text-white ms-3 text-decoration-none">
           Home
@@ -22,13 +22,12 @@ const Nav = () => {
           Carrito
         </Link>
         <ul className="nav-list text-white">
-        <li>
-            Pizzas Seleccionadas: <span className="cart-count"> {quantity} </span>
-        </li>
-      </ul>
+          <li>
+            Pizzas Seleccionadas:{' '}
+            <span className="cart-count"> {quantity} </span>
+          </li>
+        </ul>
       </div>
-
-
     </Navbar>
   );
 };

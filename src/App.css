@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Imagen de Fondo  */
+
+body {
+  background: url('') no-repeat center center fixed; /* URL de tu imagen */
+  background-size: cover;
+  background-color: #f8f9fa; /* Color de fondo de respaldo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de Navegación */
+
+.barra {
+  background-color: #e74c3c;
+  padding: 20px;
+}
+
+.barra a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.barra .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.barra .nav-list li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.barra .cart-count {
+  background-color: #28a745; /* Color verde para el contador del carrito */
+  color: white;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Fin barra de Navegación */
