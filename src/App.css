@@ -7,7 +7,8 @@
 /* Imagen de Fondo  */
 
 body {
-  background: url('') no-repeat center center fixed; /* URL de tu imagen */
+  background: url('../src/assets/img/FondoPizza.jpg') no-repeat center center
+    fixed; /* URL de tu imagen */
   background-size: cover;
   background-color: #f8f9fa; /* Color de fondo de respaldo */
   margin: 0;
@@ -48,3 +49,75 @@ body {
 }
 
 /* Fin barra de Navegación */
+
+/* Estilos para las Cards de Pizza */
+.pizza-card {
+  height: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pizza-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pizza-card-image {
+  border-radius: 10px 10px 0 0;
+}
+
+.pizza-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pizza-card-text {
+  margin-bottom: 10px;
+}
+
+.pizza-card-ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pizza-card-ingredients li {
+  margin-bottom: 5px;
+}
+
+.pizza-card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pizza-card-actions {
+  margin-top: 10px;
+}
+
+.pizza-card-quantity {
+  width: 40px;
+  height: 40px;
+  background-color: #ffc107;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fin Tarjetas */
+
+/* Estilo Boton */
+
+.green-olive-button {
+  background-color: #556b2f !important;
+  border-color: #556b2f !important;
+  color: #ffffff !important;
+}
+
+/* Estilo para el hover (opcional) */
+.green-olive-button:hover {
+  background-color: #8fbc8f !important;
+  border-color: #8fbc8f !important;
+  color: #ffffff !important;
+}
