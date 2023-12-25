@@ -10,15 +10,17 @@ function PizzaSelect() {
   const selectedPizzaId = pizzaId.toLowerCase();
 
   // Encontrar la pizza con el id correspondiente
-  const selectedPizza = cart.find((item) => item.id.toLowerCase() === selectedPizzaId);
+  const selectedPizza = cart.find(
+    (item) => item.id.toLowerCase() === selectedPizzaId
+  );
 
   // Verificar si la pizza está seleccionada y mostrar los detalles
   return (
-    <div>
+    <div className="white-text">
       {selectedPizza ? (
         <div key={selectedPizza.id}>
           <h1>{selectedPizza.name}</h1>
-          <img src= {selectedPizza.img}  width= "200px" height= "100px"></img>
+          <img src={selectedPizza.img} width="200px" height="100px"></img>
           <h2>Detalles de la pizza {selectedPizza.id}</h2>
           <p>Descripción: {selectedPizza.desc}</p>
           <p>Ingredientes: {selectedPizza.ingredients.join(', ')}</p>
